@@ -5,9 +5,9 @@ const getBorderColor = props => {
     case 'novice':
       return 'green';
     case 'intermediate':
-      return `${p => p.theme.colors.peach}`;
+      return `${p => p.theme.palette.peach}`;
     default:
-      return props.theme.colors.light.blue;
+      return props.theme.palette.light.blue;
   }
 };
 
@@ -21,7 +21,7 @@ export const ListItem = styled.div`
   border-radius: ${p => p.theme.radii.lg};
 
   &:hover {
-    background-color: ${p => p.theme.colors.light.lavender};
+    background-color: ${p => p.theme.palette.light.lavender};
   }
 `;
 

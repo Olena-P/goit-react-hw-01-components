@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 const getRandomColor = props => {
-  const lightColorKeys = Object.keys(props.theme.colors.light);
+  const lightColorKeys = Object.keys(props.theme.palette.light);
   const randomColorKey = lightColorKeys[Math.floor(Math.random() * lightColorKeys.length)];
-  return props.theme.colors.light[randomColorKey];
+  return props.theme.palette.light[randomColorKey];
 };
 
 export const StatisticsSection = styled.section`

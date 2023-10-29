@@ -31,11 +31,11 @@ export const Name = styled.p`
   color: ${props => {
     switch (props.$variant) {
       case 'primary':
-        return props.theme.colors.peach;
+        return props.theme.palette.peach;
       case 'secondary':
-        return props.theme.colors.light.lavender;
+        return props.theme.palette.light.lavender;
       default:
-        return props.theme.colors.light.green;
+        return props.theme.palette.light.green;
     }
   }};
 `;
@@ -45,11 +45,11 @@ export const Tag = styled.p`
   color: ${props => {
     switch (props.$variant) {
       case 'primary':
-        return props.theme.colors.peach;
+        return props.theme.palette.peach;
       case 'secondary':
-        return props.theme.colors.light.lavender;
+        return props.theme.palette.light.lavender;
       default:
-        return props.theme.colors.red;
+        return props.theme.palette.red;
     }
   }};
   margin: 0;
